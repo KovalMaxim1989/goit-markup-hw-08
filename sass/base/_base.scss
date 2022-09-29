@@ -1,0 +1,14 @@
+body {
+    color: var(--primary-text-color);
+
+    font-family: var(--main-fonts);
+    letter-spacing: 0.03em;
+}
+
+.container {
+    width: 1200px;
+
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
