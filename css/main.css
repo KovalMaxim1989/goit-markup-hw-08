@@ -662,7 +662,6 @@ p {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
-  letter-spacing: 0.06em;
 }
 
 .product-card__type {
@@ -1228,4 +1227,8 @@ footer {
       flex-wrap: wrap;
   gap: 30px;
   margin: 0;
+}
+
+.portfolio__item {
+  width: calc((100% - 60px) / 3);
 }/*# sourceMappingURL=main.css.map */
