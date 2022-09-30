@@ -1176,6 +1176,12 @@ p {
   display: -ms-flexbox;
   display: flex;
   gap: 30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.dowedo__item {
+  width: calc((100% - 60px) / 3);
 }
 
 .dowedo__card {
