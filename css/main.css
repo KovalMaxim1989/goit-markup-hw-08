@@ -1154,6 +1154,15 @@ p {
   line-height: 1.71;
 }
 
+.dowedo {
+  padding-bottom: 60px;
+}
+@media screen and (max-width: 1199px) {
+  .dowedo {
+    display: none;
+  }
+}
+
 .dowedo__title {
   margin-bottom: 50px;
   font-weight: 700;
