@@ -1403,11 +1403,21 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-bottom: 50px;
   gap: 8px;
+}
+@media screen and (min-width: 768px) {
+  .portfolio__button-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .portfolio__button {
@@ -1443,5 +1453,15 @@ footer {
 }
 
 .portfolio__item {
-  width: calc((100% - 60px) / 3);
+  max-width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .portfolio__item {
+    max-width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio__item {
+    max-width: calc((100% - 60px) / 3);
+  }
 }/*# sourceMappingURL=main.css.map */
