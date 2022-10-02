@@ -231,8 +231,15 @@ img {
   color: var(--accent-color);
 }
 
-.menu-container__phone {
+.menu-container__contacts {
+  margin-bottom: 64px;
+}
+
+.menu-container__contacts-item:first-child {
   margin-bottom: 32px;
+}
+
+.menu-container__phone {
   text-decoration: none;
   font-weight: 500;
   font-size: 34px;
@@ -252,7 +259,6 @@ img {
 }
 
 .menu-container__mail {
-  margin-bottom: 64px;
   text-decoration: none;
   font-weight: 500;
   font-size: 24px;
@@ -776,6 +782,16 @@ img {
 
 .address__item:not(:last-child) {
   margin-bottom: 9px;
+}
+
+.subscribe {
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .subscribe {
+    margin-left: auto;
+    text-align: left;
+  }
 }
 
 .subscribe__text {
@@ -1318,16 +1334,16 @@ img {
 }
 
 .clients__item {
-  max-width: calc((100% - 30px) / 2);
+  width: calc((100% - 30px) / 2);
 }
 @media screen and (min-width: 768px) {
   .clients__item {
-    max-width: calc((100% - 60px) / 3);
+    width: calc((100% - 60px) / 3);
   }
 }
 @media screen and (min-width: 1200px) {
   .clients__item {
-    max-width: calc((100% - 150px) / 6);
+    width: calc((100% - 150px) / 6);
   }
 }
 
@@ -1335,6 +1351,12 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border: 1px solid var(--icon-color);
   border-radius: 4px;
   padding: 16px 32px;
@@ -1365,7 +1387,6 @@ footer {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 70px;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -1389,12 +1410,27 @@ footer {
   text-transform: uppercase;
 }
 
+.footer__contacts {
+  margin-right: auto;
+}
+@media screen and (max-width: 1199px) {
+  .footer__contacts {
+    margin-bottom: 60px;
+    text-align: center;
+  }
+}
+
 .footer__socials {
   text-align: center;
 }
 @media screen and (max-width: 767px) {
   .footer__socials {
     margin: 60px 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__socials {
+    text-align: left;
   }
 }
 

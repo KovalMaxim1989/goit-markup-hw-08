@@ -7,7 +7,7 @@ footer {
 .footer__container {
   display: flex;
   flex-wrap: wrap;
-  gap: 70px;
+  // gap: 70px;
   align-items: flex-start;
   justify-content: center;
 
@@ -26,10 +26,23 @@ footer {
   line-height: calc(16 / 14);
   text-transform: uppercase;
 }
+.footer__contacts {
+  margin-right: auto;
+
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+    text-align: center;
+  }
+}
+
 .footer__socials {
   text-align: center;
+
   @media screen and (max-width: 767px) {
     margin: 60px 0;
+  }
+  @media screen and (min-width: 1200px) {
+    text-align: left;
   }
 }
 .footer__socials-link {
